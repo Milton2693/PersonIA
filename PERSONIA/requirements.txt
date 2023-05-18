@@ -1,0 +1,13 @@
+flask
+nltk==3.4
+numpy
+pandas==1.5.3
+seaborn
+scikit-learn
+wheel
+wordcloud
+xlrd
+dataframe-image
+django
+gunicorn
+psycopg2-binary

@@ -1,0 +1,20 @@
+{% extends 'botones.html' %}
+
+{% block content %}
+<section>
+    <h3 style="margin: 40px 0;">Existen diferentes técnicas de identificación de temas o tópicos pero una de las más utilizadas es
+        Latent Dirichlet Allocation o LDA. Se trata de una técnica que genera un modelo probabilístico que
+        asume que cada tema es una combinación de palabras y que cada documento (o caso en este escenario) es
+        una combinación de temas con diferentes probabilidades.
+
+        En las celdas de abajo, se crea un Pipeline que primero aplica una técnica conocida como TF-IDF que 
+        calcula la frecuencia de palabras en los casos, y calcula un score para cada palabra dando menos 
+        importancia a aquellas que aparecen con demasiada frecuencia y son poco relevantes. En este caso, 
+        se elije clasificar los temas en 5 diferentes categorias pero el número puede variar de acuerdo 
+        al caso. 
+        </h3>
+    <div style="text-align:center;">
+        <img src="{{ topicos_image }}" width="700" height="700" style="margin:auto;">
+    </div>
+</section>
+{% endblock %}

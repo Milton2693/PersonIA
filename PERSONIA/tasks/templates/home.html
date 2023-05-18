@@ -1,0 +1,84 @@
+{% extends 'toolBar.html' %}
+
+{% block content %}
+
+<div style="background-image: url('/media/homePersoneria.jpg'); background-size: 100% 100%; background-position: center; position: relative;">
+    <div style="background-color: rgba(0, 0, 0, 0.5); position: absolute; top: 0; bottom: 0; left: 0; right: 0; z-index: -1;"></div>
+    <!-- aquí va el contenido de la página -->
+    <div class="row" style="text-align: center;">
+      <div class="col" style="margin-top: 120px;">
+        <a href="/preHome/" style="text-align: center;">
+            <button style="background-color: #fff;  border: 2px solid #000; border-radius: 10px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); cursor: pointer; outline: none;  padding: 10px 20px; font-size: 19px;">
+                <img src="/media/flecha.png" alt="Descripción de la imagen" style="width: 34px; height: 34px; margin-right: 10px;">
+                Volver
+            </button>
+        </a>
+      </div>
+      <div class="col" style="margin-top: 120px;">
+        <a href="/wordcloud/" style="text-align: center;">
+            <button style="background-color: #fff;  border: 2px solid #000; border-radius: 10px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); cursor: pointer; outline: none; padding: 10px 20px; font-size: 19px;">
+              <img src="/media/nube.png" alt="Descripción de la imagen" style="width: 34px; height: 34px; margin-right: 10px;">
+                WordCloud
+            </button>
+        </a>
+      </div>
+      <div class="col" style="margin-top: 120px;">
+        <a href="/eventos/" style="text-align: center;">
+            <button style="background-color: #fff;  border: 2px solid #000; border-radius: 10px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); cursor: pointer; outline: none;  padding: 10px 20px; font-size: 19px;">
+                <img src="/media/cronograma.png" alt="Descripción de la imagen" style="width: 34px; height: 34px; margin-right: 10px;">
+                Eventos
+            </button>
+        </a>
+      </div>
+      <div class="col" style="margin-top: 120px;">
+        <a href="/topicos/" style="text-align: center;">
+            <button style="background-color: #fff;  border: 2px solid #000; border-radius: 10px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); cursor: pointer; outline: none;  padding: 10px 20px; font-size: 19px;">
+              <img src="/media/grafico.png" alt="Descripción de la imagen" style="width: 34px; height: 34px; margin-right: 10px;">
+              Topicos
+            </button>
+        </a>
+      </div>
+      <div class="col" style="margin-top: 120px;">
+        <a href="/temas/" style="text-align: center;">
+            <button style="background-color: #fff;  border: 2px solid #000; border-radius: 10px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); cursor: pointer; outline: none;  padding: 10px 20px; font-size: 19px;">
+              <img src="/media/asignaturas.png" alt="Descripción de la imagen" style="width: 34px; height: 34px; margin-right: 10px;">
+              Temas°
+            </button>
+        </a>
+      </div>
+      <div  class="col" style="margin-top: 120px;">
+        <a href="/subtemas/" style="text-align: center;">
+            <button style="background-color: #fff;  border: 2px solid #000; border-radius: 10px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); cursor: pointer; outline: none;  padding: 10px 20px; font-size: 19px;">
+              <img src="/media/idiomas.png" alt="Descripción de la imagen" style="width: 34px; height: 34px; margin-right: 10px;">
+              Subtemas
+            </button>
+        </a>
+      </div>
+      <div class="col" style="margin-top: 120px;">
+        <a href="/comunas/" style="text-align: center;">
+            <button style="background-color: #fff;  border: 2px solid #000; border-radius: 10px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); cursor: pointer; outline: none;  padding: 10px 20px; font-size: 19px;">
+              <img src="/media/grupo.png" alt="Descripción de la imagen" style="width: 34px; height: 34px; margin-right: 10px;">
+              Comunas
+            </button>
+        </a>
+      </div>
+      <div class="col" style="margin-top: 120px;">
+        <a href="/municipios/" style="text-align: center;">
+            <button style="background-color: #fff; border: 2px solid #000; border-radius: 10px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); cursor: pointer; outline: none;  padding: 10px 20px; font-size: 19px;">
+              <img src="/media/ciudad.png" alt="Descripción de la imagen" style="width: 34px; height: 34px; margin-right: 10px;">
+              Municipios
+            </button>
+        </a>
+      </div>
+      <div class="col" style="margin-top: 120px;">
+        <a href="/servicios/" style="text-align: center;">
+            <button style="background-color: #fff;  border: 2px solid #000; border-radius: 10px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); cursor: pointer; outline: none;  padding: 10px 20px; font-size: 19px;">
+              <img src="/media/servicio-al-cliente.png" alt="Descripción de la imagen" style="width: 34px; height: 34px; margin-right: 10px;">
+              Servicios
+            </button>
+        </a>
+      </div>
+    </div>
+    <div style="height: calc(100vh - 200px);"></div>
+</div>
+{% endblock %}

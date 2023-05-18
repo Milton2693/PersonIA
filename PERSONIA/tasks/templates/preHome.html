@@ -1,0 +1,33 @@
+{% extends 'toolBar.html' %}
+
+{% block content %}
+<div style="background-image: url('/media/Personeria.jpeg'); background-size: 100% 100%; background-position: center; position: relative;">
+    <div style="background-color: rgba(0, 0, 0, 0.5); position: absolute; top: 0; bottom: 0; left: 0; right: 0; z-index: -1;"></div>
+    <!-- aquí va el contenido de la página -->
+    
+    <h5 style="color: white; text-align: center; font-size: 48px; line-height: 3.5;">Bienvenido a la página PersonIA</h5>
+    <p style="color: white; text-align: center; font-size: 24px; margin-bottom: 90px;">El objetivo de esta página es permitirle a la Personería de Medellín tomar decisiones por medio de la inteligencia artificial para identificar casos de vulnerabilidad.</p>
+    <div style=" border-radius: 10px;background-color: orange; padding: 20px; width: 500px; height: 500px; margin: 0 auto; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+      <div style="display: block; text-align: center;  ">
+        <form method="post" action="{% url 'mi_vista' %}">
+          {% csrf_token %}
+          <h3 for="mi_campo" style="color: white;">En este apartado podras generar Trigramas. Ingresa el número de Ngramas que quieres generar:</h3>
+          <input type="number" placeholder="Ngramas" id="mi_campo" name="mi_campo" style="margin-right: 10px; z-index: 1; border-radius: 5px; font-size: 26px; ">
+          <div style="text-align: center; z-index: 1; margin: 10px;">
+            <input type="submit" value="Generar" style="background-color: transparent; display: inline-block; margin-bottom: 20px; font-size: 26px; border-radius: 10px; border: 2px solid #000; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); ">
+          </div>
+        </form>
+      </div>
+      <h4 style="color: white;">Consultar otro tipo de información</h4>
+      <a href="/home/" style="display: inline-block; text-decoration: none; text-align: center;">
+        <button style="background-color: transparent; border: 2px solid #000; border-radius: 20px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); cursor: pointer; outline: none;">
+          <img src="/media/seleccione.png" alt="Consultar Información" width="70" height="70" style="vertical-align: middle;">
+          <span style="font-size: 26px; display: inline-block; margin-left: 10px; color: black;">Consultar</span>
+        </button>
+      </a>  
+    </div>
+    <div style="height: calc(100vh - 800px);"></div>
+    
+  </div>
+{% endblock %}
+

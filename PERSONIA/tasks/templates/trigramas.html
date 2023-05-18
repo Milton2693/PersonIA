@@ -1,0 +1,20 @@
+{% extends 'botones.html' %}
+
+{% block content %}
+
+<section>
+    <h3 style="margin: 40px 0;">Los Trigramas son combinaciones de dos palabras que
+        pueden dar una mejor idea de los temas de conversación.
+        En este caso, es importante conocer los bigramas que más se
+        repiten y para ellos se aplican técnicas de tokenización que
+        separan las palabras del texto y cada par se convierte en
+        una fila. También se puede modificar el tamaño del ngram
+        para formar unigramas, trigramas, etc. El bigrama es una 
+        opción intermedia que permite tener algo más de contexto 
+        pero tiene suficientes ocurrencias para que sea significativa
+        la muestra (mientras mayor sea el ngram, menor el número de ocurrencias).</h3>
+    <div style="text-align:center;">
+        <img src="{{ trigramas_image }}" width="700" height="700" style="margin:auto;">
+    </div>
+</section>
+{% endblock %}

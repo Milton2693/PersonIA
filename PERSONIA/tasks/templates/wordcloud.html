@@ -1,0 +1,17 @@
+{% extends 'botones.html' %}
+
+{% block content %}
+<section>
+    <h3 style="margin: 40px 0;">Las nubes de palabras o word clouds permiten visualizar las
+        palabras más frecuentes de un texto utilizando el tamaño para
+        representar la frecuencia o importancia. En este caso, las
+        palabras se extraen de las atenciones filtradas (cerca de 8.160).
+
+        Para volverlo un poco más ligado a la imagen del municipio,se utiliza
+        un fondo con la bandera de Medellín pero se puede adaptar
+        a cualquier tipo de imagen.</h3>
+    <div style="text-align:center;">
+        <img src="{{ wordcloud_image }}" width="900" height="900" style="margin:auto;">
+    </div>
+</section>
+{% endblock %}

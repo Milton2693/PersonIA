@@ -1,0 +1,43 @@
+{% extends 'botones.html' %}
+
+{% block content %}
+
+<section style="display:inline-block; ">
+    <h3 style="margin: 40px 0;">Para entender un poco mejor como estos temas se mencionan en el tiempo, 
+        se utilizan expresiones regulares que de acuerdo a ciertos patrones de búsqueda identifiquen casos 
+        relacionados o que pueden resultar de interés. Para esto se eligen los siguientes temas que se 
+        identifican como los más reclamados por la ciudadanía: eps, savia y sura. Es importante tener 
+        en cuenta que un mismo caso puede pertenecer a mas de una categoria 
+        porque de hecho puede existir correlacion entre varios de estos temas.</h3>   
+    <div style="text-align:center;">
+        <img src="{{ dia_image }}"  width="700" height="700" style="margin:auto;">
+    </div>
+    <h3 style="margin: 40px 0;">
+        En Octubre vemos picos de menciones a savia que coinciden con los picos de usuarios 
+        unicos que vimos mas arriba. También se observa un pico de conversaciones relacionadas 
+        al sura en septiembre de 2020 que coincide con los problemas asociados a la EPS durante esas fechas.
+        Para facilitar comparaciones interanuales, en las próximas gráficas podemos ver para 
+        cada tema como cambian las menciones en el tiempo. En el caso de sura por ejemplo, 
+        se observa un aumento importante en Enero de 2020. Por otro lado, en las menciones 
+        de savia se ve un crecimiento notorio en febrero de 2020 en comparación con los meses anteriores.
+    </h3> 
+</section>
+<section style="display:inline-block;">
+    <h3 style="margin: 40px 0;">Menciones de la EPS SAVIA durante el año</h3>   
+    <div style="text-align:center;">
+        <img src="{{ sura_image }}"  width="700" height="700" style="margin:auto;">
+    </div> 
+</section>
+<section style="display:inline-block;">
+    <h3 style="margin: 40px 0;">Menciones de la EPS SAVIA durante el año</h3>   
+    <div style="text-align:center;">
+        <img src="{{ savia_image }}"  width="700" height="700" style="margin:auto;">
+    </div>
+</section>
+<section style="display:inline-block;">
+    <h3 style="margin: 40px 0;">Menciones de la palabra EPS durante el año</h3>   
+    <div style="text-align:center;">
+        <img src="{{ eps_image }}"  width="700" height="700" style="margin:auto;">
+    </div>
+</section>
+{% endblock %}
